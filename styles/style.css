@@ -52,6 +52,8 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 711px;
+  height: 456px;
 }
 
 .result__video-container {
@@ -161,7 +163,7 @@ ol {
   justify-content: center;
   align-items: center;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   align-self: end;
   color: #fff;
   text-align: center;
@@ -195,8 +197,8 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 100%;
-  height: 100%;
+  width: 399px;
+  height: 534px;
   gap: 26px;
 }
 
@@ -214,12 +216,8 @@ ol {
 
 .content__list {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 298px;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none; 
 }
 
 .content__list-item:not(:last-child) {
@@ -275,7 +273,7 @@ ol {
 .content__video-card-thumbnail {
   max-width: 194px;
   max-height: 103px;
-  justify-self: end;
+  object-fit: fill;
 }
 
 .button {
